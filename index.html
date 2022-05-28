@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css" type="text/css">
- 
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&display=swap');
-    </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="main.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
+
 <body>
-  <header> 
+  <header>
     <div class="top">
-      
+
       <img src="images/logo.svg" alt="logo">
-      
+
       <img class="menu" id="menu" src="images/icon-menu.svg" onclick="openNav()" alt="menu">
-      
+
     </div>
   </header>
-  
+
   <!-- sidebar -->
   <div id="mySidebar" class="sidebar">
     <img class="x" src="images/icon-close-menu.svg" alt="close" onclick="closeNav()">
     <br>
-    <a href="#">Features</a> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down">
-    <a href="#">Company</a> <img src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+    <a href="#" class="features">Features</a> 
+    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="flecha1">
+    <div class="content">
+      <div class="item">
+        <img src="images/icon-todo.svg" alt="icon-todo">
+        <span href="#">Todo List</span>
+      </div>
+      <div class="item">
+        <img src="images/icon-calendar.svg" alt="icon-calendar">
+        <span href="#">Calendar</span>
+      </div>
+      <div class="item">
+        <img src="images/icon-reminders.svg" alt="icon-reminders">
+        <span href="#">Reminders</span>
+      </div>
+      <div class="item">
+        <img src="images/icon-planning.svg" alt="icon-planning">
+        <span href="#">Planning</span>
+      </div>
+    </div>
+    <a href="#" class="company">Company</a> 
+    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="flecha2">
+    <div class="content2">
+    <div class="item">
+     <span href="#" class="item">History</span>
+    </div>
+    <div class="item">
+       <span href="#" class="item">Our Team</span>
+    </div>
+    <div class="item">
+      <span href="#" class="item">Blog</span>
+    </div>
+    </div>
     <a href="#">Careers</a>
     <a href="#">About</a>
     <div class="botones_reg">
       <button href="#" id="login">Login</a>
-      <button href="#" id="register">Register</a>
+        <button href="#" id="register">Register</a>
     </div>
   </div>
-  
-  
-  
+
+
+
   <div class="background">
     <img src="images/image-hero-mobile.png" alt="background" class="fondo_mobile">
   </div>
-  
+
   <div class="makeremote">
     <h1 id="makeremote">Make remote work</h1>
     <p id="text">
-      
-      Get your team in sync, no matter your location. Streamline processes, 
+
+      Get your team in sync, no matter your location. Streamline processes,
       create team rituals, and watch productivity soar.
     </p>
 
   </div>
+
+
+
+  <!-- botom -->
+  <div class="learnmore">
+    <button id="learnmore">Learn more</button>
+  </div>
+
+
+  <br>
+
+  <!-- imagenes de abajo -->
+  <div class="footer">
+    <img src="images/client-databiz.svg" alt="databiz">
+    <img src="images/client-audiophile.svg" alt="hile">
+    <img src="images/client-meet.svg" alt="meet">
+    <img src="images/client-maker.svg" alt="make">
+  </div>
+
   
-  
-  
-<!-- botom -->
-<div class="learnmore">
-  <button id="learnmore">Learn more</button>
-</div>
-
-
-<br>
-
-<!-- imagenes de abajo -->
-<div class="footer">
-  <img src="images/client-databiz.svg" alt="databiz">
-  <img src="images/client-audiophile.svg" alt="hile">
-  <img src="images/client-meet.svg" alt="meet">
-  <img src="images/client-maker.svg" alt="make">
-</div>
-
-<script src="main.js" ></script>
-
 </body>
 
 </html>

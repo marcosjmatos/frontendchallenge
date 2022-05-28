@@ -1,51 +1,57 @@
-body {
+
+
+/* Extra small devices (phones, 375 and down) */
+@media only screen and (max-width: 375px) {
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&display=swap');
+
+    body {
     background-color: white;
     font-family: 'Epilogue', sans-serif;
     margin: 0px;
-}
+    }
 
-.fondo_mobile {
+    .fondo_mobile {
     width: 375px;
     height: auto;
-}
+    }
 
-.makeremote {
+    .makeremote {
     text-align: center;
-    font-family: 'Epilogue', sans-serif;
+    /* font-family: 'Epilogue', sans-serif; */
     margin-left: 25px;
     margin-right: 25px;
-}
+    }
 
-.learnmore {
+    .learnmore {
     display: flex;
     align-content: space-around;
     flex-wrap: wrap;
     flex-direction: column;
-}
+    }
 
-#learnmore {
+    #learnmore {
     color: hsl(0, 0%, 98%);
     background: hsl(0, 0%, 8%);
     padding: 10px 25px;
     border-radius: 12px;
-}
-.text {
+    }
+    .text {
     text-align: justify;
-}
+    }
 
-.footer {
+    .footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-}
+    }
 
-.footer img {
+    .footer img {
     width:  auto;
     height: 19px;
     margin-bottom: 80px;
     margin-top: 20px;
-}
-.top {
+    }
+    .top {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -53,28 +59,30 @@ body {
     margin: 5px;
     margin-top: 30px;
     position: relative;
-}  
+    }  
 
-.menu {
+    .menu {
     height: 20px;
     position: absolute;
     top: 5%;
     right: 5%;
-    
-}
+    }
 
-.x {
- position: absolute; 
- top:3%;
- right: 8%;
- 
-}
+    .x {
+    position: absolute; 
+    top:27px;
+    right: 9%;
 
-.x {cursor: pointer;}
+    }
 
+    .x {cursor: pointer;}
 
-.sidebar {
-    height: 100%;
+    .item {
+    margin: 10px 0px; 
+    }
+
+    .sidebar {
+    height: 200vh;
     width: 0px;
     position: absolute;
     z-index: 1;
@@ -84,14 +92,14 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-}
+    }
 
-.sidebar a {
+    .sidebar a {
     color:hsl(0, 0%, 41%);
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 35px;
-    display: inline;
+    display: inline-block;
     transition: 0.3s;
     font-family: 'Epilogue', sans-serif;
     font-size: small;
@@ -99,14 +107,15 @@ body {
 
 
 
-}
-.botones_reg {
+    }
+    .botones_reg {
     display: block;
     position: relative;
     height: 150px;
-}
 
-#register {
+    }
+
+    #register {
     border: solid;
     border-width: 1px;
     border-color: black;
@@ -122,8 +131,8 @@ body {
     background-color: hsl(0, 0%, 98%);
 
 
-}
-#login {
+    }
+    #login {
     display: block;
     border: none;
     margin: 0;
@@ -134,6 +143,224 @@ body {
     transform: translate(-50%, -50%);
     background-color: hsl(0, 0%, 98%);
 
+    }
+
+    .content {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: none;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 98%);
+    margin-left: 30px;
+    font-size: 14px;
+    }
+
+
+
+    .content img span {
+
+    margin-top: 20px; 
+
+
+    }
+
+    .content2 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 98%);
+    margin-left: 30px;
+    font-size: 14px;
+    }
+
+    .flecha1 {
+
+    margin-left: 2px;
+    }
+
+
+
+}
+/* Extra small devices (phones, 1444 and down) */
+@media only screen and (max-width: 1444px) {
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&display=swap');
+
+    body {
+    background-color: white;
+    font-family: 'Epilogue', sans-serif;
+    margin: 0px;
+    }
+
+    .fondo_mobile {
+    width: 375px;
+    height: auto;
+    }
+
+    .makeremote {
+    text-align: center;
+    /* font-family: 'Epilogue', sans-serif; */
+    margin-left: 25px;
+    margin-right: 25px;
+    }
+
+    .learnmore {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    #learnmore {
+    color: hsl(0, 0%, 98%);
+    background: hsl(0, 0%, 8%);
+    padding: 10px 25px;
+    border-radius: 12px;
+    }
+    .text {
+    text-align: justify;
+    }
+
+    .footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    }
+
+    .footer img {
+    width:  auto;
+    height: 19px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    }
+    .top {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    margin-top: 30px;
+    position: relative;
+    }  
+
+    .menu {
+    height: 20px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    }
+
+    .x {
+    position: absolute; 
+    top:27px;
+    right: 9%;
+
+    }
+
+    .x {cursor: pointer;}
+
+    .item {
+    margin: 10px 0px; 
+    }
+
+    .sidebar {
+    height: 200vh;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;    
+    background-color: hsl(0, 0%, 98%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+
+    .sidebar a {
+    color:hsl(0, 0%, 41%);
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    display: inline-block;
+    transition: 0.3s;
+    font-family: 'Epilogue', sans-serif;
+    font-size: small;
+    font-weight: bold;
+
+
+
+    }
+    .botones_reg {
+    display: block;
+    position: relative;
+    height: 150px;
+
+    }
+
+    #register {
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 5px 45px 5px 45px;
+    background-color: hsl(0, 0%, 98%);
+
+
+    }
+    #login {
+    display: block;
+    border: none;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 98%);
+
+    }
+
+    .content {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: none;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 98%);
+    margin-left: 30px;
+    font-size: 14px;
+    }
+
+
+
+    .content img span {
+
+    margin-top: 20px; 
+
+
+    }
+
+    .content2 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 98%);
+    margin-left: 30px;
+    font-size: 14px;
+    }
+
+    .flecha1 {
+
+    margin-left: 2px;
+    }
+
+
+
 }
 
 
@@ -141,6 +368,6 @@ body {
 
 
 
-
+  
 
 
